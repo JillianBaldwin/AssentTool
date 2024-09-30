@@ -58,7 +58,7 @@ th, td {
             const inputText = document.getElementById('inputText').value;
             document.getElementById('output1').innerText = inputText;
             document.getElementById('output2').innerText = inputText;
-            document.getElementById('output3').innerText = inputText;
+           
         }
     </script>
 </head>
@@ -84,8 +84,8 @@ th, td {
     <td width="33%" align="center" valign="top"><strong style="text-align: center">C (Reinforcer) </strong></td>
   </tr>
   <tr>
-    <td align="left">
-		<div class="container" align="center">&nbsp;<input name="Ant" type="text" class="Top" id="Ant-box" style="background-color: #69B5FB"; border="0"  size="30">
+    <td align="left" valign="bottom">
+		<div class="container" align="center" valign="bottom">&nbsp;<input name="Ant" type="text" class="Top" id="Ant-box" style="background-color: #69B5FB"; border="0"  size="30">
 			<script>
 var post_item = document.getElementById("Ant-box");
 var btn = document.getElementById("btn-submit");
@@ -108,7 +108,7 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
             
 
     <span style="text-align: left"></span>    
-    <td width="33%" height="40" valign="middle" align="center">
+    <td width="33%" height="40" valign="bottom" align="center" >
         <form id="inputForm">
 <input type="text" class="Top" id="inputText" form="d" size="30" name="inputText"style="background-color: Pink"; oninput="displayInput()"><br>
 
@@ -181,7 +181,7 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
               <form action="#"> <center><input id="OptoutBox1" type="text" class="Top"  form="d" size="30" style="background-color: orangered"; onBlur="GetTextc();" ></center>
 			  </form>
           </label>
-	        <td align="center" valign="middle" bgcolor="pink"><div class="output" id="output2"></div></td>
+	        <td align="center" valign="middle">Escape/removal of demand </div></td>
       </div>
   </tr>
 </table>
@@ -198,7 +198,7 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
       <th scope="col" width="33%"><strong>C (Reinforcers)</strong></th>
     </tr>
     <tr>
-      <td rowspan="5" bgcolor="#69B5FB"><h1><p id="p-display3" style="text-align: center"></h1></td>
+      <td rowspan="5" bgcolor="#69B5FB"><h2><p id="p-display3" style="text-align: center"></h2></td>
        <td valign="top"><cell onclick="SpecificWindow()">
         <script>
 function SpecificWindow() {
@@ -207,7 +207,7 @@ function SpecificWindow() {
     </script>
         Specific behavior:
        <center> <input id="BehaviorBox2" type="text" class="Top"  form="d" size="30" style="background-color: green";></center></td>
-		<td rowspan="3" bgcolor="pink" align="center"><h1><div class="output" id="output3"></div></h1></td>
+		<td rowspan="3" bgcolor="pink" align="center"><h2><div class="output" id="output2"></div></h2></td>
     </tr>
     <tr>
       <td width="347" valign="top"><cell onclick="AlternativeWindow()">
@@ -243,7 +243,7 @@ function ProgrammedWindow() {
         Programmed opt-out response:
        <center> <input id="OptoutBox2" type="text" class="Top"  form="d" size="30" style="background-color: orangered";></Center>
       </td>
-      <td>Escape/removal of demand </td>
+      <td align="center">Escape/removal of demand </td>
     </tr>
     <tr>
          <td width="347" valign="top">
@@ -256,7 +256,7 @@ function OOptoutWindow() {
         Other opt-out response: This type of opt-out response includes any response topography which terminates their participation in the program.
        
       </p></td>
-      <td>Escape/removal of demand </td>
+      <td align="center">Escape/removal of demand </td>
     </tr>
   </tbody>
 </table>
@@ -315,7 +315,3 @@ document.getElementById("Beh-display").innerHTML = post_item.value;
 });
 
 </script>
-
-
-
-
