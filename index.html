@@ -39,8 +39,9 @@
 <style type="text/css">
 
 th, td {
-  border: 1px solid black;
-  border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 .Top {
@@ -100,7 +101,7 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
 	
  </div> </td>
           <span style="text-align: left"></span>    
-          <div class="container" align="left"><td width="33%" height="40" valign="middle">&nbsp;Specified Behavior: <form action="#"> <center><input id="BehaviorBox1" type="text" class="Top"  form="d" size="30" style="background-color: green"; onBlur="GetText();" ></center>
+          <div class="container" align="left"><td width="33%" height="40" valign="middle">&nbsp;Specified Behavior: <form action="#"> <center><input id="BehaviorBox1" type="text" class="Top"  form="d" size="30" style="background-color: #7BFC7B"; onBlur="GetText();" ></center>
 			  </form>
           </label>
 	  </div>
@@ -108,9 +109,9 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
             
 
     <span style="text-align: left"></span>    
-    <td width="33%" height="40" valign="bottom" align="center" >
+    <td width="33%" height="40" valign="bottom" align="center">
         <form id="inputForm">
-<input type="text" class="Top" id="inputText" form="d" size="30" name="inputText"style="background-color: Pink"; oninput="displayInput()"><br>
+<input type="text" class="Top" id="inputText" form="d" size="30" name="inputText"style="background-color: #FCF088"; oninput="displayInput()"><br>
 
     </form>
      
@@ -139,20 +140,20 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
    <span style="text-align: left"></span>    
           <div class="container" align="left">
             <td width="33%" height="40" valign="middle">&nbsp;Altenative behavior 1: 
-              <form action="#"> <center><input id="AltBehaviorBox1" type="text" class="Top"  form="d" size="30" style="background-color: purple"; onBlur="GetTexta();" ></center>
+              <form action="#"> <center><input id="AltBehaviorBox1" type="text" class="Top"  form="d" size="30" style="background-color: #FF56EA"; onBlur="GetTexta();" ></center>
 			  </form>
           </label>
 	  </div>
 
-<td rowspan="2" bgcolor="pink" align="center"> <Strong><div class="output" id="output1"></div></div></td>
-    </td>
+<td rowspan="2" bgcolor="#FCF088" align="center"> <Strong><div class="output" id="output1"></div></div></td>
+    
    
   </tr>
   <tr>
     <span style="text-align: left"></span>    
           <div class="container" align="left">
             <td width="33%" height="40" valign="middle">&nbsp;Altenative behavior 2: 
-              <form action="#"> <center><input id="AltBehaviorBox3" type="text" class="Top"  form="d" size="30" style="background-color: palevioletred"; onBlur="GetTextb();" ></center>
+              <form action="#"> <center><input id="AltBehaviorBox3" type="text" class="Top"  form="d" size="30" style="background-color: #FFADC8"; onBlur="GetTextb();" ></center>
 			  </form>
           </label>
 	  </div>
@@ -174,15 +175,15 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
     <td width="30%" align="center" valign="middle" bgcolor="#69B5FB">
 
 
-	</div><strong><p id="p-display2"></p></strong></td>
+	</div><H3><p id="p-display2"></p></h3></td>
     <span style="text-align: left"></span>    
           <div class="container" align="left">
             <td width="32%" height="40" valign="middle">&nbsp;Programmed opt-out response: 
-              <form action="#"> <center><input id="OptoutBox1" type="text" class="Top"  form="d" size="30" style="background-color: orangered"; onBlur="GetTextc();" ></center>
+              <form action="#"> <center><input id="OptoutBox1" type="text" class="Top"  form="d" size="30" style="background-color: #FF885C"; onBlur="GetTextc();" ></center>
 			  </form>
           </label>
 	        <td align="center" valign="middle">Escape/removal of demand </div></td>
-      </div>
+      
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -198,7 +199,7 @@ document.getElementById("Ant-display").innerHTML = post_item.value;
       <th scope="col" width="33%"><strong>C (Reinforcers)</strong></th>
     </tr>
     <tr>
-      <td rowspan="5" bgcolor="#69B5FB"><h2><p id="p-display3" style="text-align: center"></h2></td>
+      <td rowspan="5" bgcolor="#69B5FB"><h3><p id="p-display3" style="text-align: center"></h3></td>
        <td valign="top"><cell onclick="SpecificWindow()">
         <script>
 function SpecificWindow() {
@@ -206,8 +207,8 @@ function SpecificWindow() {
 }
     </script>
         Specific behavior:
-       <center> <input id="BehaviorBox2" type="text" class="Top"  form="d" size="30" style="background-color: green";></center></td>
-		<td rowspan="3" bgcolor="pink" align="center"><h2><div class="output" id="output2"></div></h2></td>
+       <center> <input id="BehaviorBox2" type="text" class="Top"  form="d" size="30" style="background-color: #7BFC7B";></center></td>
+		<td rowspan="3" bgcolor="#FCF088" align="center"><h3><div class="output" id="output2"></div></h3></td>
     </tr>
     <tr>
       <td width="347" valign="top"><cell onclick="AlternativeWindow()">
@@ -217,7 +218,7 @@ function AlternativeWindow() {
 }
   </script>
         Alternative behavior 1:
-        <Center><input id="AltBehaviorBox2" type="text" class="Top"  form="d" size="30" style="background-color: purple";></center>
+        <Center><input id="AltBehaviorBox2" type="text" class="Top"  form="d" size="30" style="background-color: #FF56EA";></center>
       </td>
     </tr>
     <tr>
@@ -229,7 +230,7 @@ function AlternativeWindow() {
 }
   </script>
        Alternative behavior 2:
-      <center> <input id="AltBehaviorBox4" type="text" class="Top"  form="d" size="30" style="background-color: palevioletred";></center>
+      <center> <input id="AltBehaviorBox4" type="text" class="Top"  form="d" size="30" style="background-color: #FFADC8";></center>
      </td>
     </tr>
     <tr>
@@ -241,7 +242,7 @@ function ProgrammedWindow() {
 }
   </script>
         Programmed opt-out response:
-       <center> <input id="OptoutBox2" type="text" class="Top"  form="d" size="30" style="background-color: orangered";></Center>
+       <center> <input id="OptoutBox2" type="text" class="Top"  form="d" size="30" style="background-color: #FF885C";></Center>
       </td>
       <td align="center">Escape/removal of demand </td>
     </tr>
