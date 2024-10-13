@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOOL TWO: Making Shift Happen</title>
+  <style>
+    #yesSection, #noSection {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+	
+  <h2><center><strong id="docs-internal-guid-db265fd0-7fff-c9e7-385a-4914b96fb6fe" >TOOL TWO: Making Shift Happen </strong></center></h2>
+  <p dir="ltr"><strong id="docs-internal-guid-abaa3140-7fff-5603-29bc-4d1a92157883">Purpose: </strong>Genuine assent is present. This tool will provide support to shift from the alternative response to the specified behavior.&nbsp;</p>
+	<p><strong>Directions: </Strong> Given the learner and program from Tool 1, answer the following question.&nbsp;</p>
+	<p>1. Has the specified behavior ever occurred, or does it currently occur, under any conditions (e.g., different instructors, locations, etc.)?</p>
+	
+
+<button onclick="displaySection('yes')">Yes</button>&nbsp;
+	
+<button onclick="displaySection('no')">No</button>
+  
+<div id="yesSection">
+    <h3>You answered Yes!</h3>
+    <p><p dir="ltr"><strong id="docs-internal-guid-86a08d48-7fff-c636-36c7-6e49a0b5381a">Consider the following:&nbsp;</strong></p>
+	<ol>
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Transfer procedures&nbsp;</p>
+      </li>
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Assess the reinforcer (is engaging in the response worth it?)&nbsp;</p>
+      </li>
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Analyze the antecedent context&nbsp;</p>
+        <ul>
+          <li>Try the program in a different environment&nbsp;</li>
+          <li>Try the program in a different location&nbsp;</li>
+          <li>Try the program with different materials&nbsp;</li>
+          <li>Try the program with a different instructor </li>
+        </ul>
+	  </li>
+</ol></p>
+    <!-- You can add more questions here -->
+  </div>
+  
+<div id="noSection">
+    <h3>You answered No!</h3>
+    <p>	<p dir="ltr">Consider the following:&nbsp;</p>
+<ol>
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Make the target behavior simpler and shape approximations toward the specified behavior&nbsp;</p>
+  </li>
+</ol>
+<ol start="2">
+  <li dir="ltr" aria-level="1">Assess the reinforcer (is engaging in the response worth it?)&nbsp;      </li>
+</ol>
+	<ol start="3">
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Check for missing pre-requisite behaviors&nbsp;&nbsp;</p>
+      </li>
+</ol>
+	<ol start="4">
+	  <li dir="ltr" aria-level="1">
+	    <p dir="ltr" role="presentation">Target a pre-requisite behavior&nbsp;</p>
+      </li>
+</ol>
+	<ol start="5">
+	  <li dir="ltr" aria-level="1">	    Analyze the antecedent context&nbsp;	    </li>
+</ol>
+	<ul>
+	  <li>Try the program in a different environment&nbsp;</li>
+	  <li>Try the program in a different location&nbsp;</li>
+	  <li>Try the program with different materials&nbsp;      </li>
+	  <li>Try the program with a different instructor&nbsp;</li>
+</ul>
+<br />
+	<p dir="ltr"><strong id="docs-internal-guid-daadd427-7fff-c838-8500-8201d035f234">Select the change you will make from the options above and return to Tool 1. </strong></p><strong></strong></p>
+    <!-- You can add more questions here -->
+  </div>
+  
+<script>
+    function displaySection(answer) {
+      document.getElementById('yesSection').style.display = (answer === 'yes') ? 'block' : 'none';
+      document.getElementById('noSection').style.display = (answer === 'no') ? 'block' : 'none';
+    }
+  </script>
