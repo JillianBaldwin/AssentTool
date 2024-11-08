@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOOL THREE: Establishing Participation in the Program</title>
+  <style>
+    #yesSection1, #noSection1, #yesSection2, #noSection2 {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <h2><center><strong>TOOL THREE: Establishing Participation in the Program</strong></center></h2>
+  <p><strong>Purpose:</strong> Genuine assent is not present. The purpose of this tool is to establish program participation from a learner to assess for genuine assent.</p>
+  <p><strong>Directions:</strong> Given the learner and program from Tool 1, answer the following questions.</p>
+  
+  <p>1. Is the learner using the programmed opt-out response instead of engaging in the program?</p>
+  <button onclick="displaySection('yes1')">Yes</button>
+  <button onclick="displaySection('no1')">No</button>
+  
+  <div id="yesSection1">
+    <h3>You answered Yes!</h3>
+    <p>Proceed to Question 2.</p>
+    <p>2. Does the target behavior happen under any conditions (e.g., different instructors, locations, etc.)?</p>
+    <button onclick="displaySection('yes2')">Yes</button>
+    <button onclick="displaySection('no2')">No</button>
+  </div>
+  
+  <div id="noSection1">
+    <h3>You answered No!</h3>
+    <p>The learner is using another opt-out response.</p>
+    <ul>
+      <li>Make the current opt-out response easier (e.g., using a card instead of a vocal response).</li>
+      <li>Teach a different opt-out response.</li>
+    </ul>
+    <p>Select and implement necessary changes to the opt-out response. Once they are engaging in a programmed opt-out response, proceed to Question 2.</p>
+    <p>2. Does the target behavior happen under any conditions (e.g., different instructors, locations, etc.)?</p>
+    <button onclick="displaySection('yes2')">Yes</button>
+    <button onclick="displaySection('no2')">No</button>
+  </div>
+  
+  <div id="yesSection2">
+    <h3>You answered Yes!</h3>
+    <p>Consider the following:</p>
+    <ul>
+      <li>Transfer procedures</li>
+      <li>Assess the reinforcer (is engaging in the response worth it?)</li>
+      <li>Analyze the antecedent context</li>
+      <ul>
+        <li>Try the program in a different environment</li>
+        <li>Try the program in a different location</li>
+        <li>Try the program with different materials</li>
+        <li>Try the program with a different instructor</li>
+      </ul>
+      <li>Add an additional alternative behavior.</li>
+    </ul>
+  </div>
+  
+  <div id="noSection2">
+    <h3>You answered No!</h3>
+    <p>Consider the following:</p>
+    <ul>
+      <li>Make the target behavior simpler and shape approximations toward the target behavior</li>
+      <li>Assess the reinforcer (is engaging in the response worth it?)</li>
+      <li>Check for missing pre-requisite behaviors</li>
+      <li>Target a pre-requisite behavior</li>
+      <li>Analyze the antecedent context</li>
+      <ul>
+        <li>Try the program in a different environment</li>
+        <li>Try the program in a different location</li>
+        <li>Try the program with different materials</li>
+        <li>Try the program with a different instructor</li>
+      </ul>
+    </ul>
+  </div>
+  
+  <center>
+    <h3>Created in partnership with Awab Abdel-Jalil & Angela Fuhrmann-Knowles<br>
+      <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size: 14px; font-style: normal;">Copyright © 2024 Jillian Baldwin. All Rights Reserved. <a href="" title="Legal" target="_blank">Legal</a> | <a href="" title="Privacy policy" target="_blank">Privacy policy</a>
+      </span></h3>
+  </center>
+  
+  <script>
+    function displaySection(answer) {
+      if (answer === 'yes1') {
+        document.getElementById('yesSection1').style.display = 'block';
+        document.getElementById('noSection1').style.display = 'none';
+        document.getElementById('yesSection2').style.display = 'none';
+        document.getElementById('noSection2').style.display = 'none';
+      } else if (answer === 'no1') {
+        document.getElementById('yesSection1').style.display = 'none';
+        document.getElementById('noSection1').style.display = 'block';
+        document.getElementById('yesSection2').style.display = 'none';
+        document.getElementById('noSection2').style.display = 'none';
+      } else if (answer === 'yes2') {
+        document.getElementById('yesSection2').style.display = 'block';
+        document.getElementById('noSection2').style.display = 'none';
+      } else if (answer === 'no2') {
+        document.getElementById('yesSection2').style.display = 'none';
+        document.getElementById('noSection2').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
